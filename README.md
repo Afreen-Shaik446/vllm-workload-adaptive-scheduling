@@ -1,4 +1,3 @@
-[README (1).md](https://github.com/user-attachments/files/34827064/README.1.md)
 # Workload-Adaptive Scheduling for LLM Inference
 
 **Independent ML systems research — status as of November 13, 2026:** An NVIDIA RTX A6000 single-seed pilot was run on November 6 and its original recorded data were independently recalculated. No new GPU runs were performed while preparing this repository. The adaptive scheduler **did not** outperform the fixed-2048 baseline on the measured workload. This is independent research preparation, not a publication or a proven scheduling advance.

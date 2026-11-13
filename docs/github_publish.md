@@ -1,28 +1,49 @@
-# Publish on GitHub
+# Repository publication and verification
 
-This is a **prepared local repository**, not an online publication. Before making it public, review [PUBLIC_RELEASE_NOTES.md](../PUBLIC_RELEASE_NOTES.md) (including the GPU UUID and workspace paths inside the original raw evidence ZIP), choose the intended license and confirm that all artifacts may be shared.
+This project is already published publicly at:
+https://github.com/Afreen-Shaik446/vllm-workload-adaptive-scheduling
 
-## Browser method (on Mac/PC)
+It is independent, exploratory, AI-assisted ML systems research. Public repository
+availability is not a peer-reviewed paper, university endorsement, or evidence
+of a statistically established scheduler performance improvement.
 
-1. Sign in to GitHub and open https://github.com/new.
-2. Repository owner: your personal account; name: `vllm-workload-adaptive-scheduling`. Choose **Public** only after privacy and license review. Create an **empty repository** (do not auto-add README, license, or .gitignore).
-3. Extract the supplied ZIP. In the new repo, choose **uploading an existing file** / **Add file → Upload files**, and drag the *contents* of the extracted `vllm-workload-adaptive-scheduling` folder (including subfolders) into the upload area. On macOS, hidden files such as `.gitignore` can be revealed in Finder with Cmd+Shift+Period.
-4. Commit `Add independent vLLM scheduling research and archived pilot evidence` to `main` and open the repo URL in a signed-out/incognito browser to verify it is truly public.
+## Verify an existing public checkout
 
-## Terminal method (on Mac/PC)
+On a machine with Git, Python 3.10+, and enough disk space:
 
 ```bash
-cd ~/Downloads/vllm-workload-adaptive-scheduling
-git init -b main
-git add .
-git commit -m "Add independent vLLM scheduling research and archived pilot evidence"
-# First create an empty public repository at https://github.com/new.
-git remote add origin https://github.com/Afreen-Shaik446/vllm-workload-adaptive-scheduling.git
-git push -u origin main
+git clone https://github.com/Afreen-Shaik446/vllm-workload-adaptive-scheduling.git
+cd vllm-workload-adaptive-scheduling
+python tools/verify_pilot.py --out recompute-output
+python -m pip install -r requirements-test.txt
+python -m pytest -q tests
 ```
 
-GitHub may prompt you to sign in using your configured authentication method. A GitHub personal access token (not an account password) is needed if using HTTPS basic credentials without a credential manager.
+The evidence auditor is CPU-only and uses the unchanged archival GPU record.
+The tests are deterministic software checks and are not a fresh GPU experiment.
 
-## After publication
+The file manifest `SHA256SUMS.txt` lists the hashes of the checked-in files,
+excluding the manifest itself. From the repository root, verify it with
+`sha256sum -c SHA256SUMS.txt` (Linux) or `shasum -a 256 -c SHA256SUMS.txt`
+(macOS). Recompute the manifest whenever tracked files change.
 
-Run `python -m pytest -q tests` and `python tools/verify_pilot.py --out recompute-output` on a fresh clone. Check the results and add the repository URL to your GitHub profile README. Do not present a GitHub code repository as a peer-reviewed paper.
+## Updating this public repository
+
+Make changes using GitHub's file editor or by pushing a Git commit. Keep
+`README.md` and all documentation at their existing paths. Record new
+experiments separately from the archival 2026-11-06 UTC pilot. Do not
+rewrite, relabel, or overwrite the raw experimental archive silently.
+
+## Public review limitations
+
+The raw RunPod archive includes a GPU UUID, rented-environment paths, and a
+captured excerpt of upstream vLLM scheduler source. See
+[PUBLIC_RELEASE_NOTES.md](../PUBLIC_RELEASE_NOTES.md) and
+[THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md). Before wide distribution,
+confirm that these identifiers and the captured code are appropriate to share.
+The upstream Apache-2.0 license copy applies to the referenced upstream code,
+not automatically to this project's original research scripts.
+
+For PhD materials, describe the existing result as one independently
+recomputed, single-seed exploratory GPU pilot with a negative adaptive-versus-
+fixed-2048 result; not as a journal publication or verified improvement.

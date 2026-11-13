@@ -21,6 +21,12 @@ The original source ZIP also contained unrelated applicant notes; it is delibera
 
 ## Reuse and research integrity
 
-Review AI-assisted code and verify personally. Cite prior adaptive scheduling work; study *when* adaptation works rather than claiming the general concept is new. Preserve negative results. Do not publish university or employer confidential material, API keys, pod tokens, personally identifiable data, or unapproved datasets. Make the GitHub repository private until you have inspected all files and chosen an appropriate license.
+Review AI-assisted code and verify personally. Cite prior adaptive scheduling work; study *when* adaptation works rather than claiming the general concept is new. Preserve negative results. Do not publish university or employer confidential material, API keys, pod tokens, personally identifiable data, or unapproved datasets.
+
+The repository is **already public**. Its original archived evidence includes a GPU hardware UUID, absolute cloud-workspace paths and an installed vLLM scheduler-source excerpt. See `PUBLIC_RELEASE_NOTES.md` and `THIRD_PARTY_NOTICES.md` for scope. The repository owner must determine whether continued public distribution of those details is appropriate; deleting a file in a new commit does not remove it from earlier Git history. The original research scripts are not licensed for third-party reuse by default; see `LICENSE_DECISION_REQUIRED.md`.
 
 The bundled historical audit Markdown has one editorial correction: an unexpanded `longp95diff` formatting placeholder was replaced with `116.6%`, derived from the independently recomputed long-cohort P95 values (5260.856 vs. 2428.340 ms). The raw archive and prior independent result files remain unchanged.
+
+## Timestamp clarification
+
+The captured environment reports `timestamp_utc: 2026-11-06T04:16:13.034508+00:00`, which corresponds to November 5, 2026 at 20:16:13 Pacific Standard Time. The archived run path contains `20261106` because it uses the UTC date. Those are the same experiment, not two separately executed pilots.

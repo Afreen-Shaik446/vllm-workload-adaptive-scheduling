@@ -1,0 +1,5 @@
+# Install vllm==0.32.0 first; let its metadata select compatible transformers/torch.
+aiohttp>=3.9,<4
+numpy>=2
+matplotlib>=3.9
+# Freeze the resolved environment and pip check before executing; this is not a lockfile.

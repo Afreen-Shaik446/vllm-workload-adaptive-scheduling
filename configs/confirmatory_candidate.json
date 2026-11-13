@@ -1,0 +1,30 @@
+{
+  "policies": [
+    "fixed_256",
+    "fixed_512",
+    "fixed_1024",
+    "fixed_2048",
+    "adaptive_internal"
+  ],
+  "workloads": [
+    "stable_short",
+    "stable_mixed",
+    "bursty_short",
+    "bursty_mixed",
+    "decode_heavy",
+    "bursty_decode_heavy"
+  ],
+  "rates": [
+    8
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "requests": 2400,
+  "order_seed": 6172,
+  "audit_every": 100
+}

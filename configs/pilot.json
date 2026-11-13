@@ -1,0 +1,21 @@
+{
+  "policies": [
+    "fixed_256",
+    "fixed_512",
+    "fixed_1024",
+    "fixed_2048",
+    "adaptive_internal"
+  ],
+  "workloads": [
+    "bursty_mixed"
+  ],
+  "rates": [
+    8
+  ],
+  "seeds": [
+    42
+  ],
+  "requests": 128,
+  "order_seed": 6172,
+  "audit_every": 1
+}

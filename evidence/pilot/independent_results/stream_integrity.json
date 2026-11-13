@@ -1,0 +1,42 @@
+[
+  {
+    "policy": "fixed_256",
+    "total_event_rows": 43264,
+    "parsed_response_sse_json": 21568,
+    "text_events": 21440,
+    "request_ids": 128,
+    "json_parse_error": 0
+  },
+  {
+    "policy": "fixed_512",
+    "total_event_rows": 43264,
+    "parsed_response_sse_json": 21568,
+    "text_events": 21440,
+    "request_ids": 128,
+    "json_parse_error": 0
+  },
+  {
+    "policy": "fixed_1024",
+    "total_event_rows": 43264,
+    "parsed_response_sse_json": 21568,
+    "text_events": 21440,
+    "request_ids": 128,
+    "json_parse_error": 0
+  },
+  {
+    "policy": "fixed_2048",
+    "total_event_rows": 43264,
+    "parsed_response_sse_json": 21568,
+    "text_events": 21440,
+    "request_ids": 128,
+    "json_parse_error": 0
+  },
+  {
+    "policy": "adaptive_internal",
+    "total_event_rows": 43264,
+    "parsed_response_sse_json": 21568,
+    "text_events": 21440,
+    "request_ids": 128,
+    "json_parse_error": 0
+  }
+]

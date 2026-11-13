@@ -1,0 +1,103 @@
+[
+  {
+    "policy": "fixed_256",
+    "steps": 1077,
+    "nonempty_steps": 1073,
+    "budgets_all": [
+      256
+    ],
+    "budgets_nonempty": [
+      256
+    ],
+    "budget_counts": {
+      "256": 1077
+    },
+    "actual_tokens_total": 172519,
+    "max_actual_per_step": 256,
+    "scheduler_class": [
+      "InstrumentedFixedScheduler"
+    ]
+  },
+  {
+    "policy": "fixed_512",
+    "steps": 788,
+    "nonempty_steps": 784,
+    "budgets_all": [
+      512
+    ],
+    "budgets_nonempty": [
+      512
+    ],
+    "budget_counts": {
+      "512": 788
+    },
+    "actual_tokens_total": 172519,
+    "max_actual_per_step": 512,
+    "scheduler_class": [
+      "InstrumentedFixedScheduler"
+    ]
+  },
+  {
+    "policy": "fixed_1024",
+    "steps": 713,
+    "nonempty_steps": 709,
+    "budgets_all": [
+      1024
+    ],
+    "budgets_nonempty": [
+      1024
+    ],
+    "budget_counts": {
+      "1024": 713
+    },
+    "actual_tokens_total": 172519,
+    "max_actual_per_step": 1024,
+    "scheduler_class": [
+      "InstrumentedFixedScheduler"
+    ]
+  },
+  {
+    "policy": "fixed_2048",
+    "steps": 721,
+    "nonempty_steps": 717,
+    "budgets_all": [
+      2048
+    ],
+    "budgets_nonempty": [
+      2048
+    ],
+    "budget_counts": {
+      "2048": 721
+    },
+    "actual_tokens_total": 172519,
+    "max_actual_per_step": 2048,
+    "scheduler_class": [
+      "InstrumentedFixedScheduler"
+    ]
+  },
+  {
+    "policy": "adaptive_internal",
+    "steps": 758,
+    "nonempty_steps": 754,
+    "budgets_all": [
+      512,
+      1024,
+      2048
+    ],
+    "budgets_nonempty": [
+      512,
+      1024,
+      2048
+    ],
+    "budget_counts": {
+      "2048": 474,
+      "1024": 31,
+      "512": 253
+    },
+    "actual_tokens_total": 172519,
+    "max_actual_per_step": 2048,
+    "scheduler_class": [
+      "PressureAwareScheduler"
+    ]
+  }
+]

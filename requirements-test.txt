@@ -1,0 +1,3 @@
+# Unit tests use Python stdlib; no additional dependencies.
+# vLLM engine execution requires a separate approved GPU environment,
+# and a compatible installation of vllm==0.32.0.

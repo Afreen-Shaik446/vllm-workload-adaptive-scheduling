@@ -1,6 +1,6 @@
 # Workload-Adaptive Scheduling for LLM Inference
 
-**Independent ML systems research — status as of November 13, 2026:** An NVIDIA RTX A6000 single-seed pilot was run on November 6 and its original recorded data were independently recalculated. No new GPU runs were performed while preparing this repository. The adaptive scheduler **did not** outperform the fixed-2048 baseline on the measured workload. This is independent research preparation, not a publication or a proven scheduling advance.
+**Independent ML systems research — status as of November 13, 2026:** An NVIDIA RTX A6000 single-seed pilot was run on November 5, 2026 (Pacific) / November 6, 2026 (UTC) and its original recorded data were independently recalculated. No new GPU runs were performed while preparing this repository. The adaptive scheduler **did not** outperform the fixed-2048 baseline on the measured workload. This is a publicly shared research-software record, not a peer-reviewed publication or a proven scheduling advance.
 
 ## Research question
 
@@ -91,4 +91,4 @@ This is **independent, AI-assisted experimental research**. The measured GPU res
 
 The completed single-seed result was generated **before** this repository was packaged. Its original code SHA256 fingerprints, patch, server/runtime manifest, log hashes, and audit outputs are documented in `docs/provenance.md`. The Python experiment scripts were built with AI assistance, and this package has not been independently rerun on a second GPU. All new experiments must be labelled separately from the November 6 pilot. No other professional data or university application documents are included.
 
-For privacy, attribution, and permission considerations before sharing raw experiment evidence, read [PUBLIC_RELEASE_NOTES.md](PUBLIC_RELEASE_NOTES.md). This repository is not affiliated with UC Berkeley or any other institution. No open-source license has been chosen (see `LICENSE_DECISION_REQUIRED.md`).
+For privacy, attribution, and permission considerations before sharing raw experiment evidence, read [PUBLIC_RELEASE_NOTES.md](PUBLIC_RELEASE_NOTES.md). This repository is not affiliated with UC Berkeley or any other institution. No open-source license has been chosen for the original project code (see `LICENSE_DECISION_REQUIRED.md`). Upstream-source attribution is in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

@@ -19,7 +19,7 @@ One seed, one workload family, one model and one GPU: the adaptive controller ch
 ## Third-party and license considerations
 
 - This repository does **not** vendor model weights. Its model is Qwen2.5-1.5B-Instruct, referenced by model name and revision.
-- The recorded archive contains `environment/installed_schedule.py`, a copy of the installed upstream vLLM scheduler source captured during execution. Check upstream notices and the project's applicable license before distributing derived or copied code.
+- The recorded archive contains `environment/installed_schedule.py`, a copy of the installed upstream vLLM scheduler source captured during execution. The upstream attribution and a copy of its Apache-2.0 license are included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `third_party/`; the repository owner should still check whether all upstream copyright and any NOTICE requirements are met.
 - The applicant has not chosen a license for the original experiment scripts. GitHub does not require a license to make code publicly visible, but absence of a license restricts others' reuse rights; see `LICENSE_DECISION_REQUIRED.md`.
 
 ## Publication status
